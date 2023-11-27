@@ -1,0 +1,5 @@
+set(
+        QSPARSEPROP_SOURCES
+        ${QSPARSEPROP_SOURCES}
+        ${CMAKE_CURRENT_SOURCE_DIR}/constants.h
+)

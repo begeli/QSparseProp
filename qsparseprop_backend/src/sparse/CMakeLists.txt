@@ -1,0 +1,19 @@
+SET(
+        QSPARSEPROP_SOURCES
+        ${QSPARSEPROP_SOURCES}
+        ${CMAKE_CURRENT_SOURCE_DIR}/qsparse_conv2d_stride_1.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/qsparse_conv2d_stride_2.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/qsparse_linear.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/sparse_conv2d.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/sparse_linear.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/sparse_conv2d_over_on.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/qsparse_conv2d_over_on.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/qsparse_conv2d_stride_1.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/qsparse_conv2d_stride_2.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/qsparse_linear.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/sparse_conv2d.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/sparse_linear.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/sparse_conv2d_over_on.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/qsparse_conv2d_over_on.cpp
+        PARENT_SCOPE
+)

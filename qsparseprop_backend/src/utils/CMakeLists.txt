@@ -1,0 +1,15 @@
+set(
+        QSPARSEPROP_SOURCES
+        ${QSPARSEPROP_SOURCES}
+        ${CMAKE_CURRENT_SOURCE_DIR}/openmp_utils.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/simdmath.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/simdxorshift128plus.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/sparse_utils.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/tensor_utils.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/openmp_utils.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/simdmath.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/simdxorshift128plus.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/sparse_utils.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/tensor_utils.cpp
+        PARENT_SCOPE
+)

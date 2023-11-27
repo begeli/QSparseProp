@@ -1,0 +1,21 @@
+#include <gtest/gtest.h>
+#include <sys/resource.h>
+
+#define STACKSIZE 268435456
+#define CORESIZE 268435456
+
+int main(int argc, char* argv[]) {
+    struct rlimit rl;
+
+    // Increase stack size to 256MB -- not necessary, but might as well.
+    int result = getrlimit(RLIMIT_STACK, &rl);
+    rl.rlim_cur = STACKSIZE;
+
+    // Increase core dump size from 0 -- just in case something goes wrong.
+    result = getrlimit(RLIMIT_CORE, &rl);
+    rl.rlim_cur = CORESIZE;
+    setrlimit(RLIMIT_CORE, &rl);
+
+    testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
+}

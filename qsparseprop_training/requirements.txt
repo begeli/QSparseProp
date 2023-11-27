@@ -1,0 +1,7 @@
+sparseml[torch]
+deeplake
+torch
+numpy
+torchvision
+tqdm
+scipy
