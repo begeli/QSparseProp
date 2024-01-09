@@ -3,7 +3,7 @@
 This repo contains the code for my master's thesis 
 where I implemented a quantized backpropagation algorithm
 to speed up finetuning of sparse neural networks. We support 
-quantization support for sparse linear and convolutional layers.
+quantization for sparse linear and convolutional layers.
 
 Neural networks are growing at exponential rates. It is becoming more resource 
 intensive and time consuming to train and deploy more sophisticated models. In order
